@@ -12,9 +12,7 @@
 	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Raleway:100,200,300,400,500,600,700&display=swap" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" href="css/main-structure-style.css" />
-	<!--
-		<link rel="stylesheet" type="text/css" href="css/fixed.nav.slider.fullpage.css" />
-	-->
+	<link rel="stylesheet" type="text/css" href="css/fullpage.css" />
 </head>
 
 <body>
@@ -27,7 +25,6 @@
 		<nav>
 			<ul>
 				<li><a class="active" href="#Welcome">Welcome</a></li>
-				<li><a href="#Who-We-Are">Who We Are</a></li>
 				<li><a href="#What-We-Do">What We Do</a></li>
 				<li><a href="#Get-In-Touch">Get In Touch</a></li>
 			</ul>
@@ -35,36 +32,59 @@
 	</header>
 	<main id="fullpage">
 		<section class="section" id="section0">
-			<!--
-			<div class="intro">
-				<h1>Main Header</h1>
-				<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae excepturi, facilis quas laudantium commodi ipsum.</p>
+			<div class="slide-section" id="welcome-section">
+				<h1>Hi there! We are the new kids on the block and we build awesome websites and apps</h1>
+				<div>
+					<a href="#Get-In-Touch"><button class="button">Work with us!</button></a>
+				</div>
 			</div>
-			-->
 		</section>
 		<section class="section" id="section1">
-			<!--
-			<div class="intro">
-				<h1>Main Header</h1>
-				<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae excepturi, facilis quas laudantium commodi ipsum.</p>
+			<div class="slide-section" id="work-section">
+				<div class="title-box">
+					<h2>What We Do</h2>
+					<div class="line"></div>
+					<p>We are working with individuals and businesses from all over the globe to create awesome websites and applications.</p>
+				</div>
+				<div class="blurb-row">
+					<div class="blurb">
+						<img src="img/flag-icon.png">
+						<h3>Branding</h3>
+						<p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+					</div>
+					<div class="blurb">
+						<img src="img/crayon-icon.png">
+						<h3>Design</h3>
+						<p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+					</div>
+					<div class="blurb">
+						<img src="img/gears-icon.png">
+						<h3>Development</h3>
+						<p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+					</div>
+				</div>
 			</div>
-			-->
 		</section>
 		<section class="section" id="section2">
-			<!--
-			<div class="intro">
-				<h1>Main Header</h1>
-				<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae excepturi, facilis quas laudantium commodi ipsum.</p>
+			<div class="slide-section" id="contact-section">
+				<div class="title-box">
+					<h2>Get In Touch</h2>
+				</div>
+				<div id="contact-form">
+					<form>
+						<div class="form-row">
+							<input type="text" name="name" placeholder="Your Name">
+							<input type="email" name="email" placeholder="Your Email">
+						</div>
+						<div class="form-row">
+							<textarea name="message" placeholder="Your Message"></textarea>
+						</div>
+						<div class="form-row">
+							<input type="submit" class="button" value="Send Message">
+						</div>
+					</form>
+				</div>
 			</div>
-			-->
-		</section>
-		<section class="section" id="section3">
-			<!--
-			<div class="intro">
-				<h1>Main Header</h1>
-				<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae excepturi, facilis quas laudantium commodi ipsum.</p>
-			</div>
-			-->
 		</section>
 	</main>
 	<footer id="footer" class="footer-links">
@@ -82,8 +102,8 @@
 	
 	<script type="text/javascript">
 	var myFullpage = new fullpage('#fullpage', {
-		anchors: ['Welcome', 'Who-We-Are', 'What-We-Do', 'Get-In-Touch'],
-		sectionsColor: ['#00C0EB', '#E4572E', '#FFC914', '#76B041'],
+		anchors: ['Welcome', 'What-We-Do', 'Get-In-Touch'],
+		sectionsColor: ['#00C0EB', '#E4572E', '#76B041'],
 		css3: true
 		});
 	</script>
